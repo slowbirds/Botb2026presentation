@@ -243,9 +243,7 @@ export default function App() {
                   BOTB Generation
                 </div>
                 <h4 className="text-4xl leading-tight tracking-tight mb-4">
-                  Legacy But
-                  <br />
-                  Still Arrive
+                  The Vanguard
                 </h4>
                 <p className="text-base leading-relaxed opacity-60 mb-6">
                   The original movement lives on. One DJ who was there from the beginning, carrying the torch forward.
@@ -370,7 +368,7 @@ export default function App() {
               alt=""
               className="w-full h-full object-cover grayscale"
             />
-            
+
             {/* Overlay text on image */}
             <div className="absolute inset-0 flex items-end p-12">
               <div className="text-9xl font-extralight tracking-tighter opacity-20 mix-blend-difference">
@@ -554,9 +552,9 @@ export default function App() {
               <br />
               THE WORLD
             </h2>
-            
+
             <div className="w-32 h-px bg-white/40 mx-auto my-12" />
-            
+
             <p className="text-4xl tracking-[0.2em] uppercase font-light">
               Join the Core
             </p>
