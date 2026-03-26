@@ -589,12 +589,12 @@ export default function App() {
               For updates and access
             </p>
             <div className="flex justify-center gap-8 text-lg tracking-widest">
-              <a href="#" className="hover:opacity-60 transition-opacity underline">
+              <a href="https://www.instagram.com/baseofthebass/" className="hover:opacity-60 transition-opacity underline">
                 INSTAGRAM
               </a>
               <span className="opacity-20">/</span>
-              <a href="#" className="hover:opacity-60 transition-opacity underline">
-                EMAIL
+              <a href="https://www.facebook.com/BaseOfTheBass" className="hover:opacity-60 transition-opacity underline">
+                FACEBOOK
               </a>
             </div>
           </div>
