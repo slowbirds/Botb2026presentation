@@ -22,26 +22,26 @@ export default function App() {
           }}
         />
 
-        <div className="relative z-10 max-w-6xl mx-auto px-8 text-center py-20">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 text-center py-12 md:py-20">
           {/* Main title */}
-          <h1 className="text-[8rem] leading-none tracking-tighter mb-6 mix-blend-difference">
+          <h1 className="text-5xl md:text-[8rem] leading-none tracking-tighter mb-6 mix-blend-difference">
             BASE OF
             <br />
             THE BASS
           </h1>
 
           {/* Year */}
-          <div className="text-[12rem] leading-none tracking-tighter opacity-80 font-extralight">
+          <div className="text-7xl md:text-[12rem] leading-none tracking-tighter opacity-80 font-extralight">
             2026
           </div>
 
           {/* Subtitle */}
-          <div className="mt-12 text-2xl tracking-[0.3em] uppercase font-light">
+          <div className="mt-8 md:mt-12 text-lg md:text-2xl tracking-[0.3em] uppercase font-light">
             CORE
           </div>
 
           {/* Tagline */}
-          <p className="mt-16 text-lg tracking-widest uppercase opacity-60 max-w-3xl mx-auto">
+          <p className="mt-10 md:mt-16 text-sm md:text-lg tracking-widest uppercase opacity-60 max-w-3xl mx-auto">
             The Resurrection of Saigon's Underground Sonic Ritual
           </p>
         </div>
@@ -55,51 +55,53 @@ export default function App() {
 
       {/* Section 2: Philosophy */}
       <section className="relative min-h-screen bg-white text-black overflow-hidden">
-        {/* Large image on left */}
-        <div className="absolute left-0 top-0 w-1/2 h-full">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1664891177697-9d98b79b75fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYXJjaGl0ZWN0dXJlJTIwZGFya3xlbnwxfHx8fDE3NzM5OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt=""
-            className="w-full h-full object-cover grayscale"
-          />
-        </div>
+        <div className="flex flex-col md:flex-row min-h-screen">
+          {/* Large image on left */}
+          <div className="relative w-full h-64 md:w-1/2 md:h-auto md:min-h-screen">
+            <ImageWithFallback
+              src="https://images.unsplash.com/photo-1664891177697-9d98b79b75fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwYXJjaGl0ZWN0dXJlJTIwZGFya3xlbnwxfHx8fDE3NzM5OTI5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              alt=""
+              className="w-full h-full object-cover grayscale absolute inset-0"
+            />
+          </div>
 
-        {/* Content on right */}
-        <div className="absolute right-0 top-0 w-1/2 h-full flex items-center px-20">
-          <div className="max-w-xl">
-            {/* Label */}
-            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-8">
-              01 — Philosophy
-            </div>
+          {/* Content on right */}
+          <div className="w-full md:w-1/2 flex items-center px-6 py-12 md:px-20 md:py-0">
+            <div className="max-w-xl">
+              {/* Label */}
+              <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-8">
+                01 — Philosophy
+              </div>
 
-            {/* Title */}
-            <h2 className="text-6xl leading-tight mb-12 tracking-tight">
-              Physicality
-              <br />
-              <span className="opacity-40">&</span>
-              <br />
-              Anti-Uniformity
-            </h2>
+              {/* Title */}
+              <h2 className="text-4xl md:text-6xl leading-tight mb-8 md:mb-12 tracking-tight">
+                Physicality
+                <br />
+                <span className="opacity-40">&</span>
+                <br />
+                Anti-Uniformity
+              </h2>
 
-            {/* Quote */}
-            <div className="relative pl-8 border-l-2 border-black">
-              <p className="text-xl leading-relaxed mb-6">
-                Beyond the commodity.
-              </p>
-              <p className="text-xl leading-relaxed opacity-80">
-                A return to the raw vibration that cancels out the cognitive noise.
-              </p>
-            </div>
+              {/* Quote */}
+              <div className="relative pl-8 border-l-2 border-black">
+                <p className="text-lg md:text-xl leading-relaxed mb-6">
+                  Beyond the commodity.
+                </p>
+                <p className="text-lg md:text-xl leading-relaxed opacity-80">
+                  A return to the raw vibration that cancels out the cognitive noise.
+                </p>
+              </div>
 
-            {/* Bottom text */}
-            <div className="mt-16 text-sm tracking-widest uppercase opacity-30">
-              The body as receiver
+              {/* Bottom text */}
+              <div className="mt-10 md:mt-16 text-sm tracking-widest uppercase opacity-30">
+                The body as receiver
+              </div>
             </div>
           </div>
         </div>
 
         {/* Decorative glitch element */}
-        <div className="absolute top-1/3 left-1/2 w-1 h-32 bg-black transform -translate-x-1/2 -skew-x-12" />
+        <div className="absolute top-1/3 left-1/2 w-1 h-32 bg-black transform -translate-x-1/2 -skew-x-12 hidden md:block" />
       </section>
 
       {/* Section 3: The Sound */}
@@ -113,17 +115,17 @@ export default function App() {
           }}
         />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-8 py-20">
+        <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 py-12 md:py-20">
           {/* Label */}
-          <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-12">
+          <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-8 md:mb-12">
             02 — The Sound
           </div>
 
           {/* Main content in grid */}
-          <div className="grid grid-cols-2 gap-20 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mb-12 md:mb-20">
             {/* Left column */}
             <div>
-              <h2 className="text-7xl leading-none mb-8 tracking-tighter">
+              <h2 className="text-4xl md:text-7xl leading-none mb-6 md:mb-8 tracking-tighter">
                 Experimental
                 <br />
                 Heavy Bass
@@ -134,12 +136,12 @@ export default function App() {
             </div>
 
             {/* Right column */}
-            <div className="flex flex-col justify-center space-y-8">
+            <div className="flex flex-col justify-center space-y-6 md:space-y-8">
               <div className="border-l-2 border-white/20 pl-6">
                 <div className="text-sm uppercase tracking-widest opacity-40 mb-2">
                   Characteristics
                 </div>
-                <p className="text-xl leading-relaxed">
+                <p className="text-base md:text-xl leading-relaxed">
                   Deep, atmospheric, and industrial.
                 </p>
               </div>
@@ -148,7 +150,7 @@ export default function App() {
                 <div className="text-sm uppercase tracking-widest opacity-40 mb-2">
                   Approach
                 </div>
-                <p className="text-xl leading-relaxed">
+                <p className="text-base md:text-xl leading-relaxed">
                   Frequencies that move through the body, not just the ears.
                 </p>
               </div>
@@ -157,7 +159,7 @@ export default function App() {
                 <div className="text-sm uppercase tracking-widest opacity-40 mb-2">
                   Intention
                 </div>
-                <p className="text-xl leading-relaxed">
+                <p className="text-base md:text-xl leading-relaxed">
                   Twisted. Distorted. Uncompromising.
                 </p>
               </div>
@@ -165,7 +167,7 @@ export default function App() {
           </div>
 
           {/* Waveform visualization */}
-          <div className="flex items-center gap-1 h-32">
+          <div className="flex items-center gap-1 h-20 md:h-32">
             {Array.from({ length: 80 }).map((_, i) => (
               <div
                 key={i}
@@ -190,36 +192,36 @@ export default function App() {
           />
         </div>
 
-        <div className="relative z-10 h-full flex items-center p-20 py-32">
+        <div className="relative z-10 h-full flex items-center p-6 py-16 md:p-20 md:py-32">
           <div className="max-w-6xl mx-auto w-full">
             {/* Label */}
-            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-16">
+            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-10 md:mb-16">
               03 — The Lineup
             </div>
 
             {/* Intro */}
-            <div className="mb-20">
-              <h2 className="text-6xl leading-tight mb-8 tracking-tight">
+            <div className="mb-12 md:mb-20">
+              <h2 className="text-4xl md:text-6xl leading-tight mb-6 md:mb-8 tracking-tight">
                 Four DJs.
                 <br />
                 One Night.
               </h2>
-              <p className="text-xl opacity-60 max-w-2xl">
+              <p className="text-base md:text-xl opacity-60 max-w-2xl">
                 A curated selection spanning generations and styles, united by a singular vision.
               </p>
             </div>
 
             {/* DJ Slowbirds - Featured */}
-            <div className="border-t-4 border-black pt-12 mb-16">
-              <div className="grid grid-cols-3 gap-12">
-                <div className="col-span-2">
+            <div className="border-t-4 border-black pt-8 md:pt-12 mb-12 md:mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div className="md:col-span-2">
                   <div className="text-sm uppercase tracking-widest opacity-40 mb-4">
                     Resident / Curator
                   </div>
-                  <h3 className="text-7xl leading-none tracking-tighter mb-6">
+                  <h3 className="text-4xl md:text-7xl leading-none tracking-tighter mb-4 md:mb-6">
                     DJ SLOWBIRDS
                   </h3>
-                  <p className="text-2xl leading-relaxed max-w-xl">
+                  <p className="text-lg md:text-2xl leading-relaxed max-w-xl">
                     The architect behind Base of the Bass. A genre-defying journey through dub-rooted heavy bass that transcends categorization.
                   </p>
                 </div>
@@ -236,13 +238,13 @@ export default function App() {
             </div>
 
             {/* Guest DJs Grid */}
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               {/* BOTB Generation */}
-              <div className="border-l-2 border-black pl-8">
+              <div className="border-l-2 border-black pl-6 md:pl-8">
                 <div className="text-sm uppercase tracking-widest opacity-40 mb-4">
                   BOTB Generation
                 </div>
-                <h4 className="text-4xl leading-tight tracking-tight mb-4">
+                <h4 className="text-2xl md:text-4xl leading-tight tracking-tight mb-4">
                   The Vanguard
                 </h4>
                 <p className="text-base leading-relaxed opacity-60 mb-6">
@@ -254,11 +256,11 @@ export default function App() {
               </div>
 
               {/* Gen-Z New Generation */}
-              <div className="border-l-2 border-black pl-8">
+              <div className="border-l-2 border-black pl-6 md:pl-8">
                 <div className="text-sm uppercase tracking-widest opacity-40 mb-4">
                   Gen-Z, New Generation
                 </div>
-                <h4 className="text-4xl leading-tight tracking-tight mb-4">
+                <h4 className="text-2xl md:text-4xl leading-tight tracking-tight mb-4">
                   2026's
                   <br />
                   Sonic Rebels
@@ -273,15 +275,15 @@ export default function App() {
             </div>
 
             {/* Bottom note */}
-            <div className="mt-20 text-center text-sm tracking-[0.3em] uppercase opacity-30">
+            <div className="mt-12 md:mt-20 text-center text-sm tracking-[0.3em] uppercase opacity-30">
               Lineup reveals soon
             </div>
           </div>
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute top-1/2 right-20 w-px h-32 bg-black opacity-10" />
-        <div className="absolute bottom-1/4 left-20 w-32 h-px bg-black opacity-10" />
+        <div className="absolute top-1/2 right-20 w-px h-32 bg-black opacity-10 hidden md:block" />
+        <div className="absolute bottom-1/4 left-20 w-32 h-px bg-black opacity-10 hidden md:block" />
       </section>
 
       {/* Section 5: VJ Peachman */}
@@ -295,105 +297,105 @@ export default function App() {
           />
         </div>
 
-        <div className="relative z-10 h-full flex flex-col justify-between p-20 py-32">
+        <div className="relative z-10 h-full flex flex-col justify-between p-6 py-16 md:p-20 md:py-32">
           {/* Top section */}
           <div>
-            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-12">
+            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-8 md:mb-12">
               04 — Visual Architect
             </div>
 
-            <h2 className="text-8xl leading-none tracking-tighter mb-6">
+            <h2 className="text-5xl md:text-8xl leading-none tracking-tighter mb-4 md:mb-6">
               VJ
               <br />
               PEACHMAN
             </h2>
 
-            <p className="text-2xl tracking-wide max-w-2xl">
+            <p className="text-lg md:text-2xl tracking-wide max-w-2xl">
               High-Dimensional Interaction
             </p>
           </div>
 
           {/* Middle section */}
-          <div className="max-w-3xl">
-            <div className="grid grid-cols-3 gap-8 mb-12">
+          <div className="max-w-3xl mt-10 md:mt-0">
+            <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
               <div>
-                <div className="text-6xl mb-2">↔</div>
-                <p className="text-sm uppercase tracking-widest opacity-60">
+                <div className="text-4xl md:text-6xl mb-2">↔</div>
+                <p className="text-xs md:text-sm uppercase tracking-widest opacity-60">
                   Sensors
                 </p>
               </div>
               <div>
-                <div className="text-6xl mb-2">◉</div>
-                <p className="text-sm uppercase tracking-widest opacity-60">
+                <div className="text-4xl md:text-6xl mb-2">◉</div>
+                <p className="text-xs md:text-sm uppercase tracking-widest opacity-60">
                   Audio Data
                 </p>
               </div>
               <div>
-                <div className="text-6xl mb-2">⟡</div>
-                <p className="text-sm uppercase tracking-widest opacity-60">
+                <div className="text-4xl md:text-6xl mb-2">⟡</div>
+                <p className="text-xs md:text-sm uppercase tracking-widest opacity-60">
                   Movement
                 </p>
               </div>
             </div>
 
-            <div className="border-l-4 border-black pl-8 py-4">
-              <p className="text-2xl leading-relaxed mb-4">
+            <div className="border-l-4 border-black pl-6 md:pl-8 py-4">
+              <p className="text-lg md:text-2xl leading-relaxed mb-4">
                 Real-time 3D object generation driven by audience movement and sonic density.
               </p>
-              <p className="text-xl leading-relaxed opacity-60">
+              <p className="text-base md:text-xl leading-relaxed opacity-60">
                 The room as a living organism.
               </p>
             </div>
           </div>
 
           {/* Bottom section */}
-          <div className="text-sm tracking-[0.3em] uppercase opacity-30">
+          <div className="text-sm tracking-[0.3em] uppercase opacity-30 mt-10 md:mt-0">
             Generative / Reactive / Immersive
           </div>
         </div>
 
         {/* Decorative elements */}
-        <div className="absolute top-1/4 right-20 w-px h-40 bg-black opacity-20 transform rotate-12" />
-        <div className="absolute bottom-1/4 left-20 w-40 h-px bg-black opacity-20 transform -rotate-12" />
+        <div className="absolute top-1/4 right-20 w-px h-40 bg-black opacity-20 transform rotate-12 hidden md:block" />
+        <div className="absolute bottom-1/4 left-20 w-40 h-px bg-black opacity-20 transform -rotate-12 hidden md:block" />
       </section>
 
       {/* Section 6: The Space */}
       <section className="relative min-h-screen bg-black text-white overflow-hidden">
         {/* Split layout */}
-        <div className="grid grid-cols-2 min-h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
           {/* Left: Image */}
-          <div className="relative">
+          <div className="relative h-64 md:h-auto">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1756969918552-00ec1d19abef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicnV0YWxpc3QlMjBidWlsZGluZyUyMG1vbm9jaHJvbWV8ZW58MXx8fHwxNzczOTkyOTM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt=""
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover grayscale absolute inset-0"
             />
 
             {/* Overlay text on image */}
-            <div className="absolute inset-0 flex items-end p-12">
-              <div className="text-9xl font-extralight tracking-tighter opacity-20 mix-blend-difference">
+            <div className="absolute inset-0 flex items-end p-6 md:p-12">
+              <div className="text-5xl md:text-9xl font-extralight tracking-tighter opacity-20 mix-blend-difference">
                 UMBALA
               </div>
             </div>
           </div>
 
           {/* Right: Content */}
-          <div className="flex flex-col justify-center px-20 py-12">
-            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-12">
+          <div className="flex flex-col justify-center px-6 py-12 md:px-20 md:py-12">
+            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-8 md:mb-12">
               05 — The Space
             </div>
 
-            <h2 className="text-7xl leading-none tracking-tighter mb-12">
+            <h2 className="text-4xl md:text-7xl leading-none tracking-tighter mb-8 md:mb-12">
               The Concrete
               <br />
               Bunker
             </h2>
 
-            <div className="space-y-8 mb-16">
+            <div className="space-y-6 md:space-y-8 mb-10 md:mb-16">
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-white mt-3 flex-shrink-0" />
                 <div>
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-base md:text-xl leading-relaxed">
                     Windowless. Isolated. Industrial.
                   </p>
                 </div>
@@ -402,7 +404,7 @@ export default function App() {
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-white mt-3 flex-shrink-0" />
                 <div>
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-base md:text-xl leading-relaxed">
                     Located in the heart of Thao Dien, yet completely removed from the outside world.
                   </p>
                 </div>
@@ -411,7 +413,7 @@ export default function App() {
               <div className="flex items-start gap-4">
                 <div className="w-2 h-2 bg-white mt-3 flex-shrink-0" />
                 <div>
-                  <p className="text-xl leading-relaxed">
+                  <p className="text-base md:text-xl leading-relaxed">
                     A shelter designed for sonic density and collective immersion.
                   </p>
                 </div>
@@ -419,7 +421,7 @@ export default function App() {
             </div>
 
             <div className="border-t border-white/20 pt-8">
-              <p className="text-sm tracking-widest uppercase opacity-40">
+              <p className="text-xs md:text-sm tracking-widest uppercase opacity-40">
                 Capacity: Intimate / Sound System: Custom Heavy Bass Rig
               </p>
             </div>
@@ -427,7 +429,7 @@ export default function App() {
         </div>
 
         {/* Vertical divider */}
-        <div className="absolute top-0 left-1/2 w-px h-full bg-white/10" />
+        <div className="absolute top-0 left-1/2 w-px h-full bg-white/10 hidden md:block" />
       </section>
 
       {/* Section 7: The Legacy */}
@@ -441,37 +443,37 @@ export default function App() {
           />
         </div>
 
-        <div className="relative z-10 h-full flex items-center justify-center p-20 py-32">
+        <div className="relative z-10 h-full flex items-center justify-center p-6 py-16 md:p-20 md:py-32">
           <div className="max-w-5xl w-full">
             {/* Label */}
-            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-16 text-center">
+            <div className="text-sm tracking-[0.4em] uppercase opacity-40 mb-10 md:mb-16 text-center">
               06 — The Legacy
             </div>
 
             {/* Main stats */}
-            <div className="grid grid-cols-2 gap-16 mb-20">
+            <div className="grid grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-20">
               <div className="text-center">
-                <div className="text-[12rem] leading-none font-extralight tracking-tighter">
+                <div className="text-7xl md:text-[12rem] leading-none font-extralight tracking-tighter">
                   30
                 </div>
-                <p className="text-2xl tracking-[0.2em] uppercase mt-4 opacity-60">
+                <p className="text-lg md:text-2xl tracking-[0.2em] uppercase mt-2 md:mt-4 opacity-60">
                   Events
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-[12rem] leading-none font-extralight tracking-tighter">
+                <div className="text-7xl md:text-[12rem] leading-none font-extralight tracking-tighter">
                   8
                 </div>
-                <p className="text-2xl tracking-[0.2em] uppercase mt-4 opacity-60">
+                <p className="text-lg md:text-2xl tracking-[0.2em] uppercase mt-2 md:mt-4 opacity-60">
                   Years of Silence
                 </p>
               </div>
             </div>
 
             {/* Timeline */}
-            <div className="grid grid-cols-3 gap-12 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-20">
               <div className="text-center">
-                <div className="text-5xl mb-4 tracking-tighter">2012–2018</div>
+                <div className="text-3xl md:text-5xl mb-2 md:mb-4 tracking-tighter">2012–2018</div>
                 <p className="text-sm uppercase tracking-widest opacity-60">
                   The Era
                 </p>
@@ -480,7 +482,7 @@ export default function App() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-5xl mb-4 tracking-tighter opacity-40">2018–2026</div>
+                <div className="text-3xl md:text-5xl mb-2 md:mb-4 tracking-tighter opacity-40">2018–2026</div>
                 <p className="text-sm uppercase tracking-widest opacity-40">
                   The Silence
                 </p>
@@ -489,7 +491,7 @@ export default function App() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="text-5xl mb-4 tracking-tighter">2026</div>
+                <div className="text-3xl md:text-5xl mb-2 md:mb-4 tracking-tighter">2026</div>
                 <p className="text-sm uppercase tracking-widest opacity-60">
                   The Return
                 </p>
@@ -500,30 +502,30 @@ export default function App() {
             </div>
 
             {/* Venues */}
-            <div className="border-t-2 border-black pt-12 mb-12">
-              <p className="text-2xl leading-relaxed text-center mb-8">
+            <div className="border-t-2 border-black pt-8 md:pt-12 mb-12">
+              <p className="text-lg md:text-2xl leading-relaxed text-center mb-6 md:mb-8">
                 The venues that held the movement
               </p>
-              <div className="flex justify-center gap-12 text-5xl tracking-wider">
+              <div className="flex justify-center gap-6 md:gap-12 text-2xl md:text-5xl tracking-wider">
                 <span className="opacity-80">THE CUBE</span>
                 <span className="opacity-20">/</span>
                 <span className="opacity-80">PIU PIU</span>
               </div>
-              <p className="text-center text-sm uppercase tracking-widest opacity-40 mt-8">
+              <p className="text-center text-sm uppercase tracking-widest opacity-40 mt-6 md:mt-8">
                 Saigon Central • 2012–2018
               </p>
             </div>
 
             {/* Bottom text */}
-            <div className="mt-16 text-center text-sm tracking-[0.3em] uppercase opacity-30">
+            <div className="mt-10 md:mt-16 text-center text-sm tracking-[0.3em] uppercase opacity-30">
               Where a generation found their frequency
             </div>
           </div>
         </div>
 
         {/* Decorative lines */}
-        <div className="absolute top-0 left-1/4 w-px h-full bg-black opacity-5" />
-        <div className="absolute top-0 right-1/4 w-px h-full bg-black opacity-5" />
+        <div className="absolute top-0 left-1/4 w-px h-full bg-black opacity-5 hidden md:block" />
+        <div className="absolute top-0 right-1/4 w-px h-full bg-black opacity-5 hidden md:block" />
       </section>
 
       {/* Section 8: CTA */}
@@ -544,29 +546,29 @@ export default function App() {
           }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-8 text-center py-20">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 text-center py-12 md:py-20">
           {/* Main CTA */}
-          <div className="mb-20">
-            <h2 className="text-[10rem] leading-none tracking-tighter mb-8 mix-blend-difference">
+          <div className="mb-12 md:mb-20">
+            <h2 className="text-4xl md:text-[10rem] leading-none tracking-tighter mb-6 md:mb-8 mix-blend-difference">
               NEUTRALIZE
               <br />
               THE WORLD
             </h2>
 
-            <div className="w-32 h-px bg-white/40 mx-auto my-12" />
+            <div className="w-20 md:w-32 h-px bg-white/40 mx-auto my-8 md:my-12" />
 
-            <p className="text-4xl tracking-[0.2em] uppercase font-light">
+            <p className="text-xl md:text-4xl tracking-[0.2em] uppercase font-light">
               Join the Core
             </p>
           </div>
 
           {/* Details */}
-          <div className="grid grid-cols-2 gap-16 max-w-2xl mx-auto mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-2xl mx-auto mb-12 md:mb-20">
             <div className="text-left border-l-2 border-white/20 pl-6">
               <div className="text-sm uppercase tracking-widest opacity-40 mb-3">
                 Date
               </div>
-              <p className="text-2xl tracking-wide">
+              <p className="text-xl md:text-2xl tracking-wide">
                 TBA 2026
               </p>
             </div>
@@ -575,14 +577,14 @@ export default function App() {
               <div className="text-sm uppercase tracking-widest opacity-40 mb-3">
                 Location
               </div>
-              <p className="text-2xl tracking-wide">
+              <p className="text-xl md:text-2xl tracking-wide">
                 Umbala, Thao Dien
               </p>
             </div>
           </div>
 
           {/* Social/Contact */}
-          <div className="space-y-4 mb-20">
+          <div className="space-y-4 mb-12 md:mb-20">
             <p className="text-sm tracking-[0.4em] uppercase opacity-60">
               For updates and access
             </p>
@@ -604,10 +606,10 @@ export default function App() {
         </div>
 
         {/* Corner decorations */}
-        <div className="absolute top-8 left-8 w-16 h-16 border-t-2 border-l-2 border-white/10" />
-        <div className="absolute top-8 right-8 w-16 h-16 border-t-2 border-r-2 border-white/10" />
-        <div className="absolute bottom-8 left-8 w-16 h-16 border-b-2 border-l-2 border-white/10" />
-        <div className="absolute bottom-8 right-8 w-16 h-16 border-b-2 border-r-2 border-white/10" />
+        <div className="absolute top-4 left-4 md:top-8 md:left-8 w-10 h-10 md:w-16 md:h-16 border-t-2 border-l-2 border-white/10" />
+        <div className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-16 md:h-16 border-t-2 border-r-2 border-white/10" />
+        <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 w-10 h-10 md:w-16 md:h-16 border-b-2 border-l-2 border-white/10" />
+        <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 w-10 h-10 md:w-16 md:h-16 border-b-2 border-r-2 border-white/10" />
       </section>
     </div>
   );
